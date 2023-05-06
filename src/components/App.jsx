@@ -67,26 +67,3 @@ export class App extends Component {
   }
 }
 
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101'
-//       }}
-//     >
-//       <h1>Please leave feedback</h1>
-//         <button type="button">Good</button>
-//         <button type="button">Neutral</button>
-//         <button type="button">Bad</button>
-//         <h2>Statistic</h2>
-//         <p>Good:</p>
-//         <p>Neutral:</p>
-//         <p>Bad:</p>
-//     </div>
-//   );
-// };
