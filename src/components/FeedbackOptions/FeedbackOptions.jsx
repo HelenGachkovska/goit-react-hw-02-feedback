@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { ContaiherBtn, Button } from './styled';
 
 const FeedbackOptions = ({ option, onLeaveFeedback }) => {
   return (
-    <>
+    <ContaiherBtn>
       {option.map(el => (
-        <button type="button" name={el} onClick={onLeaveFeedback} key={el}>
+        <Button type="button" name={el} onClick={onLeaveFeedback} key={el}>
           {(el = el.charAt(0).toUpperCase() + el.slice(1))}
-        </button>
+        </Button>
       ))}
-    </>
+    </ContaiherBtn>
   );
 };
 
 FeedbackOptions.propTypes = {
+  option: PropTypes.array.isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
 
