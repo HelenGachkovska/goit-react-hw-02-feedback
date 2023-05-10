@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TitleStat, Text } from './styled';
+import { Text } from './styled';
 
 const Statistics = ({
   good,
@@ -11,18 +11,11 @@ const Statistics = ({
 }) => {
   return (
     <div>
-      <TitleStat>Statistic</TitleStat>
-      {good === 0 && neutral === 0 && bad === 0 ? (
-        <Text>No feedback given</Text>
-      ) : (
-        <div>
-          <Text>Good: {good}</Text>
-          <Text>Neutral: {neutral}</Text>
-          <Text>Bad: {bad}</Text>
-          <Text>Total: {totalFeedback}</Text>
-          <Text>Positive Feedback: {positiveFeedback}%</Text>
-        </div>
-      )}
+      <Text>Good: {good}</Text>
+      <Text>Neutral: {neutral}</Text>
+      <Text>Bad: {bad}</Text>
+      <Text>Total: {totalFeedback}</Text>
+      <Text>Positive Feedback: {positiveFeedback}%</Text>
     </div>
   );
 };
